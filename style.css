@@ -2,7 +2,7 @@ body {
     /*background-color: #fff;*/
     background-image: url('links/bg-image.jpg');
     background-size: cover;
-    color: #555;
+    color: #333;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6em;
@@ -40,7 +40,24 @@ body {
 
 #main {
     float: left;
-    width: 70%;
-    padding: 0 30px;
+    max-width: 50%;
+    padding: 30px 30px;
+    box-sizing: border-box;
+}
+
+#main h1 {
+    font-size: 36px;
+    line-height: 1.0em;
+}
+
+#side-img {
+    float: right;
+    max-width: 50%;
+    height: auto;
+    width: auto;
+    background: #333;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 10px;
     box-sizing: border-box;
 }
