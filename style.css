@@ -37,13 +37,13 @@ body {
 #navbar li {
     display: inline;
     padding: 10px;
+    font-size: 20px;
 }
 
 #navbar a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    padding-right: 15px;
 }
 
 #main {
@@ -55,7 +55,7 @@ body {
 
 #main h1 {
     background-color: #121c26;
-    filter: opacity(80%);
+    filter: opacity(85%);
     color: #fff;
     padding: 10px;
 
@@ -65,7 +65,7 @@ body {
 
 #main p {
     background-color: #121c26;
-    filter: opacity(80%);
+    filter: opacity(85%);
     color: #fff;
     padding: 10px;
 }
