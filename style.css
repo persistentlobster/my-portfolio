@@ -3,10 +3,22 @@ body {
     /*background-image: url('links/bg-image.jpg');
     background-size: cover;*/
     color: #0e1a26;
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     line-height: 1.6em;
     margin: 0;
+}
+
+.fab {
+    color: #29343E;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
 }
 
 #main-header img {
@@ -19,21 +31,26 @@ body {
     overflow: hidden;
 }
 
+.wrapper {
+    clear: both;
+    padding-top: 60px;
+}
+
 #navbar {
     background-color: #0e1a26;
     color: #fff;
+    
     height: 60px;
     border-bottom: 4px solid #fff;
-    /*text-align: center;*/
     padding-top: 2px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-#navbar ul {
-    padding: 0;
-    list-style: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 #navbar li {
@@ -58,8 +75,10 @@ body {
 #main h1 {
     background-color: #121c26;
     filter: opacity(85%);
+    border: 2px solid #fff;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 80px;
 
     font-size: 36px;
     line-height: 1.0em;
@@ -68,7 +87,21 @@ body {
 #main p {
     background-color: #121c26;
     filter: opacity(85%);
+    border: 2px solid #fff;
     color: #fff;
+    padding: 20px;
+}
+
+.social {
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    /*float: right;*/
+}
+
+.social a {
+    position: relative;
+    text-align: center;
     padding: 10px;
 }
 
@@ -78,9 +111,34 @@ body {
     height: auto;
     width: auto;
     
-    background: #0e1a26;
-    margin-top: 60px;
+    background: #29343E;
+    margin-top: 110px;
     margin-bottom: 30px;
     padding: 8px;
+}
+
+#about {
+    background-color: #121c26;
+    filter: opacity(85%);
+    color: #fff;
+
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    /*border-radius: 10px;*/
+}
+
+#projects h3 {
+    margin-top: 60px;
+    text-align: center;
+    color: #121c26;
+}
+.block {
+    float: left;
+    width: 27.8%;
+    height: 200px;
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid #fff;
     box-sizing: border-box;
 }
+
