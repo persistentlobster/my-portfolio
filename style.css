@@ -81,7 +81,7 @@ h1, h2, h3 {
     margin-top: 80px;
 
     font-size: 36px;
-    line-height: 1.0em;
+    line-height: 1.2em;
 }
 
 #main p {
@@ -140,5 +140,9 @@ h1, h2, h3 {
     margin: 30px;
     border: 2px solid #fff;
     box-sizing: border-box;
+
+    background-image: url("links/placeholder.png");
+    background-position-x: center;
+    background-size: contain;
 }
 
