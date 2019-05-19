@@ -36,6 +36,12 @@ h1, h2, h3 {
     padding-top: 60px;
 }
 
+.desc {
+    width: 33%;
+    margin: auto;
+    overflow: hidden;
+}
+
 #navbar {
     background-color: #0e1a26;
     color: #fff;
@@ -127,22 +133,36 @@ h1, h2, h3 {
     /*border-radius: 10px;*/
 }
 
-#projects h3 {
+#projects h2 {
     margin-top: 60px;
     text-align: center;
     color: #121c26;
 }
 .block {
     float: left;
-    width: 27.8%;
-    height: 200px;
+    width: 29%;
+    height: 400px;
     padding: 10px;
-    margin: 30px;
-    border: 2px solid #fff;
+    margin: 2%;
     box-sizing: border-box;
-
-    background-image: url("links/placeholder.png");
-    background-position-x: center;
-    background-size: contain;
+    /*border: 2px solid #fff;*/
 }
 
+.block img {
+    max-width: 100%;
+    max-height: 100%;
+
+    border: 2px solid #fff;
+}
+
+/*#b1 {
+    background-image: url("links/TauNet_img.png");
+    background-position: left;
+    background-size: auto 200px;
+    background-repeat: no-repeat;
+}*/
+
+    /*border: 2px solid #fff;
+    background-image: url("links/placeholder.png");
+    background-position-x: center;
+    background-size: contain;*/
