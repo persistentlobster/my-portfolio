@@ -70,7 +70,6 @@ h1, h2, h3 {
 }
 
 /********** Main Content **********/
-
 #main {
     float: left;
     max-width: 50%;
@@ -159,6 +158,10 @@ h1, h2, h3 {
 /********** Media Queries **********/
 
 @media(max-width: 980px) {
+    .container {
+        width: 90%;
+    }
+
     #main {
         float: none;
         max-width: 100%;
@@ -180,5 +183,22 @@ h1, h2, h3 {
 
     #b1 {
         margin-top: 40px;
+    }
+}
+
+@media(max-width: 465px) {
+    #navbar li {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    #navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    #main h1 {
+        font-size: 24px;
     }
 }
