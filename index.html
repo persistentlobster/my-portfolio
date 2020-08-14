@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Portfolio Test</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,83 +11,70 @@
 <body>
     <header id="main-header">
         <nav id="navbar">
-            <a href="#main"> 
+            <a href="#"> 
                 <img src="links/mb_logo_opaque.png" height="40px">
             </a>
-            <ul>
-                <li><a href="#main">HOME</a></li>
-                <li>/</li>
-                <li><a href="#about">ABOUT</a></li>
-                <li>/</li>
-                <li><a href="#projects">PROJECTS</a></li>
-            </ul>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li>/</li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li>/</li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div class="container">
-        <section id="main">
-            <h1>Hey there! I'm Micah.</h1>
+    <main class="container">
+        <div class="name-title">
+            <h1>Hey there! I'm <span class="color-secondary">Micah Burnett</span>.</h1>
+            <h3>I'm a Software Developer.</h2>
+        </div>
+        <img src="links/edit4.JPG" class="bio-image">
+        <div class="bio">
             <p>
-                I'm a software developer living with my wife in SW Portland, OR. I recently graduated from Portland State University 
+                I'm a software developer living in SW Portland, OR. I recently graduated from Portland State University 
                 with a B.S. in Computer Science. My focus lately has been on full-stack web development and 
-                cloud deployment. However, my educational background has provided me with a solid foundation in core 
-                concepts such as data structures, algorithms, and Object-oriented design. I enjoy everything 
+                cloud deployment. I enjoy everything 
                 from low-level systems programming and scripting to higher-level Android 
                 and web app development. You can check out a few of my projects below!<br><br>
     
-                Aside from programming, I'm an avid drummer, sci-fi & fantasy movie buff, and animal lover. Also... robots! I love robots. 
-                <i class="fas fa-robot"></i>
+                Aside from programming, I'm an avid drummer, sci-fi & fantasy movie buff, and animal lover. 
+                <!-- Also... robots! I love robots.<i class="fas fa-robot"></i> -->
             </p>
-            <div class="social">
-                <h3>FOLLOW ME</h3>
-                <a class="fab fa-github" href="https://github.com/persistentlobster" target="_blank"></a>Github
-                <a class="fab fa-linkedin" href="https://www.linkedin.com/in/micah-burnett-19496b5a" target="_blank"></a>LinkedIn
-            </div>
-        </section>
-        <div id='side-img'>
-            <img src="links/micah-bear-sm.jpg">
         </div>
-        <!-- <div class="wrapper">
-            <section id="about">
-                <h3>ABOUT ME</h3>
-                <hr>
-                <p>
-                    My name is Micah and I'm a programmer living in Portland, OR. I'm currently 
-                    finishing up my bachelor's degree in Computer Science from Portland State 
-                    University. You can see some of my work below. Outside of programming, I love 
-                    playing music, hiking, and spending time with my friends and family.
-                </p>
-            </section>
-        </div> -->
-        <div class="wrapper">
-            <section id="projects">
-                <h2>SOME OF MY WORK</h2>
-                    <div class="block" id="b1">
-                        <img src="links/TauNet_img.png">
-                        <h3>TauNet Chat</h3>
-                        <p>TauNet chat is simple terminal chat app that uses basic RC4 encription.</p>
-                        <p>
-                            View source code <a href="https://github.com/persistentlobster/TauNet" target="_blank">HERE</a> on Github.
-                        </p>
-                    </div>
-                    <div class="block" id="b2">
-                        <img src="links/cirrus_weather_screenshot.png">
-                        <h3>Cirrus</h3>
-                        <p>Cirrus is a React weather app that I developed with a teammate.</p>
-                    </div>
-                    <div class="block" id="b3">
-                        <img src="links/recipe_roulette_screenshot.png">
-                        <h3>Recipe Roulette</h3>
-                        <p>
-                            A Python Flask web app deployed on GCP. Discover and save meals or meal plans that fit your dietary needs.
-                        </p>
-                    </div>
-            </section>
+        <div class="social">
+            <!-- <h3>FOLLOW ME</h3> -->
+            <a class="fab fa-github" href="https://github.com/persistentlobster" target="_blank"></a>Github
+            <a class="fab fa-linkedin" href="https://www.linkedin.com/in/micah-burnett-19496b5a" target="_blank"></a>LinkedIn
+            <a class="far fa-envelope" href="mailto:persistentlobster@gmail.com" target="_blank"></a>Contact Me
         </div>
-    </div>
+        <div id="projects">
+            <h2>LATEST PROJECTS</h2>
+        </div>
+        <div class="block" id="b1">
+            <img src="links/TauNet_img.png">
+            <h3>TauNet Chat</h3>
+            <p>TauNet chat is simple terminal chat app that uses basic RC4 encription.</p>
+            <p>
+                View source code <a href="https://github.com/persistentlobster/TauNet" target="_blank">HERE</a> on Github.
+            </p>
+        </div>
+        <div class="block" id="b2">
+            <img src="links/cirrus_weather_screenshot.png">
+            <h3>Cirrus</h3>
+            <p>Cirrus is a React weather app that I developed with a teammate.</p>
+        </div>
+        <div class="block" id="b3">
+            <img src="links/recipe_roulette_screenshot.png">
+            <h3>Recipe Roulette</h3>
+            <p>
+                A Python Flask web app deployed on GCP. Discover and save meals or meal plans that fit your dietary needs.
+            </p>
+        </div>
+    </main>
     <footer id="main-footer">
-         <p>Contact me&nbsp;
-             <a class="far fa-envelope" href="mailto:persistentlobster@gmail.com" target="_blank"></a>
-        </p>
+         <p>Copyright &copy; 2020</p>
     </footer>
 </body>
 </html>

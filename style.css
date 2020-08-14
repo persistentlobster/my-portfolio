@@ -1,6 +1,6 @@
 body {
-    background-color: #9bb6c1;
-    color: #0e1a26;
+    background-color: #222930;
+    color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -8,17 +8,9 @@ body {
     margin: 0;
 }
 
-/*********** Generic Classes ***********/
-
-.fab {
-    color: #29343E;
+.fab, .far {
+    color: #4EB1BA;
     font-size: 30px;
-    text-decoration: none;
-}
-
-.far {
-    color: #fff;
-    font-size: 20px;
     text-decoration: none;
 }
 
@@ -26,28 +18,38 @@ h1, h2, h3 {
     font-weight: 500;
 }
 
+.color-primary {
+    color: #4EB1BA;
+}
+
+.color-secondary {
+    color: #cb4d4f;
+}
+
 .container {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "name-title name-title bio-image"
+                         "bio        bio        bio-image"
+                         "social     social     ."
+                         "projects   projects   projects"
+                         "b1         b2         b3";
+    gap: 10px;
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
-
-.wrapper {
-    clear: both;
-    padding-top: 30px;
-}
-
-/********** Navbar ***********/
 
 #main-header img {
     padding-left: 10px;
 }
 
 #navbar {
-    background-color: #0e1a26;
+    background-color: #222930;
     color: #fff;
     height: 60px;
-    border-bottom: 4px solid #fff;
+    border-bottom: 4px solid #4EB1BA;
     padding-top: 2px; 
     display: flex;
     justify-content: space-between;
@@ -61,88 +63,112 @@ h1, h2, h3 {
     display: inline;
     padding: 10px;
     font-size: 20px;
+    border-radius: 16px;
 }
 
 #navbar a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    padding: 0.5em;
+    border-radius: 16px;
 }
 
-/********** Main Content **********/
-#main {
-    float: left;
-    max-width: 50%;
-    padding: 30px 30px;
-    box-sizing: border-box;
+#navbar li a:hover {
+    background-color: #4EB1BA;
 }
 
-#main h1 {
-    background-color: #121c26;
-    filter: opacity(85%);
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 20px;
-    margin-top: 80px;
-    font-size: 36px;
-    line-height: 1.2em;
-}
-
-#main p {
-    background-color: #121c26;
-    filter: opacity(85%);
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 20px;
+#navbar a:active {
+    background-color: #4EB1BA;
 }
 
 .social {
-    margin-top: 40px;
+    grid-area: social;
     text-align: center;
+    justify-self: left;
 }
 
 .social a {
     padding: 10px;
 }
 
-#side-img img {
-    float: right;
-    max-width: 50%;
-    border: 8px solid #29343E;
-    margin-top: 110px;
-    margin-bottom: 30px;
+.name-title {
+    grid-area: name-title;
+}
+
+.name-title > h3 {
+    opacity: 30%;
+    margin-bottom: 0;
+}
+
+.bio {
+    grid-area: bio;
+    padding-right: 60px;
+}
+
+.bio-image {
+    grid-area: bio-image;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border: solid 3px #fff;
     box-sizing: border-box;
+    border-radius: 50%;
 }
 
-#about {
-    width: 70%;
-    margin: auto;
-    background-color: #121c26;
-    filter: opacity(85%);
-    color: #fff;
-    padding: 15px 30px;
-    border: 2px solid #fff;
-}
-
-#projects h2 {
+#projects {
     margin-top: 60px;
-    text-align: center;
-    color: #121c26;
+    margin-bottom: 20px;
+    grid-area: projects;
+}
+
+#projects > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+} 
+
+#projects > h2:after, h2:before {
+    content: '';
+    width: 150px;
+    height: 2px;
+    margin: 0 10px;
+}
+
+#projects > h2:before {
+    background: linear-gradient(to right, #222930, #4EB1BA);
+}
+
+#projects > h2:after {
+    background: linear-gradient(to right,#4EB1BA, #222930);
 }
 
 .block {
-    float: left;
-    width: 29%;
+    grid-area: block;
     height: auto;
     padding: 10px;
     margin: 2%;
     box-sizing: border-box;
+    color: #fff;
 }
 
 .block img {
     max-width: 100%;
     max-height: 100%;
     border: 2px solid #fff;
+}
+
+#b1 {
+    grid-area: b1;
+}
+
+#b2 {
+    grid-area: b2;
+}
+
+#b3 {
+    grid-area: b3;
 }
 
 /********** Footer **********/
