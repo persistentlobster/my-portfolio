@@ -95,6 +95,7 @@ h1, h2, h3 {
     font-size: 18px;
     padding: 0.5em;
     border-radius: 16px;
+    outline: none;
 }
 
 #navbar li a:hover {
