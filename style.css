@@ -98,10 +98,6 @@ h1, h2, h3 {
     outline: none;
 }
 
-#navbar li a:hover {
-    background-color: #4EB1BA;
-}
-
 .social {
     grid-area: social;
     text-align: center;
@@ -292,5 +288,12 @@ h1, h2, h3 {
     .download-pdf {
         font-size: 10px;
         padding: 1px 6px;
+    }
+}
+
+/* Only change color on hover if device is a laptop */
+@media(hover: hover) and (pointer: fine) {
+    #navbar li a:hover {
+        background: #4EB1BA;
     }
 }
