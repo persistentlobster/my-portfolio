@@ -48,7 +48,8 @@ h1, h2, h3 {
                          "bio        bio        bio-image"
                          "social     social     ."
                          "projects   projects   projects"
-                         "b1         b2         b3";
+                         "b1         b2         b3"
+                         "b4         .          .";
     gap: 10px;
     width: 80%;
     margin: auto;
@@ -191,6 +192,10 @@ h1, h2, h3 {
     grid-area: b3;
 }
 
+#b4 {
+    grid-area: b4;
+}
+
 #main-footer {
     background-color: #0e1a26;
     color: #fff;
@@ -216,7 +221,7 @@ h1, h2, h3 {
                              "social      social"
                              "projects   projects"
                              "b1 b2"
-                             "b3 .";
+                             "b3 b4";
     }
 
     .social {
@@ -236,7 +241,8 @@ h1, h2, h3 {
                              "projects"
                              "b1"
                              "b2"
-                             "b3";
+                             "b3"
+                             "b4";
     }
 
     .name-title, .bio {
