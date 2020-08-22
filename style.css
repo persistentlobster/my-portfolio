@@ -180,6 +180,15 @@ h1, h2, h3 {
     border: 2px solid #fff;
 }
 
+.block a {
+    text-decoration: none;
+    color: #cb4d4f;
+}
+
+.block a:hover {
+    opacity: 50%;
+}
+
 #b1 {
     grid-area: b1;
 }
